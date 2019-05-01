@@ -1,5 +1,5 @@
 # mntopod
-mininet topology daemon : get a live graphical representation of your mininet topologies and flows in your browser in ~30 secondes
+mininet topology daemon : get a live graphical representation of your [mininet](http://mininet.org/) topologies and flows in your browser in ~30 secondes
 
 ![Demo](example.png)
 
