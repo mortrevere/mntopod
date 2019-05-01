@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Mininet Topology</title>
+		<script src="res/vue.js"></script>
+		<script src="res/jquery-3.3.1.min.js"></script>
+		<script src="res/next/js/next.js"></script>
+		<link rel="stylesheet" href="res/next/css/next.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+		<script src="res/socket.io.js"></script>
+
+	</head>
+	<body>
+		<!--<textarea id="mn-dump-list"></textarea>-->
+		<!-- page content -->
+		<div id="app-nmtopo">
+			<div id="info" v-bind:class="[classInfo, { hidden: !showInfo }]">
+				{{infoText}}
+			</div>
+			<div id="backend-form">
+				<p>
+					Backend IP/port ({{wslatency}}ms)
+				</p>
+				<input v-model="wsbackend" :disabled="wsconnected"/>
+				<!--
+				<button v-if="!wsconnected">Go</button>
+				<button v-else>X</button>
+				-->
+				
+				<input type="checkbox" id="checkbox-live" v-model="live" v-on:change="toggleLive">
+				<label for="checkbox-live">Live updates</label>
+				
+			</div>
+			<div id="logs">
+				<pre>{{logs}}</pre>
+			</div>
+			<div id="topology-container"></div>
+		</div>
+
+	</body>
+</html>

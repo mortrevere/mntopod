@@ -1,0 +1,83 @@
+#topology-container {
+
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#mn-dump-list {
+	width: 23%;
+	height: 200px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 15;
+}
+
+#backend-form {
+	width: 13%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 15;
+	background-color: #0386d2;
+	padding: 12px;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#backend-form p {
+	margin: 2%;
+}
+
+#backend-form input {
+	width: 94%;
+	margin: 2%
+}
+
+#backend-form button {
+	width: 16%;
+	margin: 1%;
+}
+
+#backend-form #checkbox-live {
+	width: 6%;
+}
+
+#info {
+	position: fixed;
+	top: 40%;
+	text-align: center;
+	width: 100%;
+	z-index: 15;
+	background-color: rgba(255,0,0,0.8);
+	padding: 24px 0;
+	border: 1px solid rgba(255,0,51,1);
+	font-size: 2em;
+	color: #FFF;
+	font-family: 'Lato', sans-serif;
+}
+
+#logs {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 15;
+	padding: 12px;
+}
+
+.blue {
+	background-color: rgba(0,0,255,0.8) !important;
+	border: 1px solid rgba(51,0,255,1) !important;
+}
+
+.green {
+	background-color: rgba(0,255,0,0.8) !important;
+	border: 1px solid rgba(0,255,51,1) !important;
+}
+
+.hidden {
+	display: none;
+}
