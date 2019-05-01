@@ -1,8 +1,6 @@
 # mntopod
 mininet topology daemon : get a live graphical representation of your mininet topologies and flows in your browser in ~30 secondes
 
-![Demo](example.png)
-
 ## Usage
 
 mntopod includes three components : backend, middleware and client.
@@ -12,7 +10,7 @@ The **client** is a webpage that you can host somewhere or just open in your bro
 The **middleware** is a single nodejs file that you need to run somewhere reachable from the mininet VM and your client.
 
 ```
-npm install && npm start
+cd middleware && npm install && npm start
 ```
 
 The **backend** is a single python file that you include in your mininet topology.
@@ -45,6 +43,12 @@ if __name__ == '__main__':
     setLogLevel( 'info' )
     myNetwork()
 ```
+
+## Ressources
+
+This project uses [socket.io](https://socket.io/), [Next UI](https://github.com/NeXt-UI), and [Vue.js](https://vuejs.org/)
+
+You can find more informations about Mininet [here](http://mininet.org/).
 
 
 
