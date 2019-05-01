@@ -1,6 +1,8 @@
 # mntopod
 mininet topology daemon : get a live graphical representation of your mininet topologies and flows in your browser in ~30 secondes
 
+![Demo](example.png)
+
 ## Usage
 
 mntopod includes three components : backend, middleware and client.
