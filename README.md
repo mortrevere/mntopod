@@ -25,6 +25,7 @@ Instanciating `MininetTopologyDaemon` is the only step needed. The IP is the IP 
 #!/usr/bin/python
 from mininet.net import Mininet
 from mininet.cli import CLI
+from mininet.log import setLogLevel, info
 
 from mntopobackend import MininetTopologyDaemon
 
