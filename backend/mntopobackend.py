@@ -34,6 +34,7 @@ class MininetTopologyDaemon:
         self.looper = RepeatedTimer(6, self.updateToDaemon)
         self.net = net
         self.endpoint = 'http://%s:%s/topo' % (ip, port)
+        self.err_display_count = 0
         self.updateToDaemon();
 
     def stop(self):
@@ -61,5 +62,6 @@ class MininetTopologyDaemon:
 
         try:
             r = requests.post(self.endpoint, data={'d' : json.dumps(topo)})
-        except requests.exceptions.RequestException as e:  # This is the correct syntax
-            print('[ERROR] Failed to reach mntopod')
+        except requests.exceptions.RequestException as e:
+            self.err_display_count += 1
+            if self.err_display_count < 6 print('[ERROR] Failed to reach mntopod') else print('[ERROR] Failed to reach mntopod : not displaying that error anymore.')

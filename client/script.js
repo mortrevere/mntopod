@@ -263,7 +263,8 @@ $(function() {
 				topology.data({
 					nodes : nodes,
 					links : links
-				});
+                });
+                topology.data(topology.data())
 
 			},
 			fitToWindow : function() {
