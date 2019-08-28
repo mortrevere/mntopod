@@ -47,7 +47,7 @@ if __name__ == '__main__':
     myNetwork()
 ```
 
-A typical setup, using the [Mininet VM](http://mininet.org/vm-setup-notes/), would be deploying the **middleware** and **client** on your host while running yourcustom topologies in the VM.
+A typical setup, using the [Mininet VM](http://mininet.org/vm-setup-notes/), would be deploying the **middleware** and **client** on your host while running your custom topologies in the VM.
 
 ## Ressources
 
